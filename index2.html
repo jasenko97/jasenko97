@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="js/index.js"></script>    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+      <style>
+          [data-role="page"] {
+      background-image: url("bec.jpg");
+                    }
+
+      </style>
+    <div data-role="page" id="page1">
+      <div data-role="header">
+        <h1>AQUAWIEN</h1>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <a href="#page1">IN</a>
+        <a href="#">OUT</a>
+        <a href="#page4">MAP</a>
+      </div>
+    </div>
+
+    <div data-role="page" id="page4">
+      <div>
+        <br><b>Karte</b><br>
+        <div id="googlemap" style="width:200px; height:280px;"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+          <a href="#page1">IN</a>
+          <a href="#">OUT</a>
+          <a href="#page4">MAP</a>
+        </div>
+      </div>
+      
+ <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />
+ <div id="qrcode"></div>
+ 
+      
+  <form action="#" onSubmit="calcRoute();return false;" id="routeForm">
+  <label>
+    
+  <input type="text" id="routeStart" value="kruisstraat 50, oss">
+          <a href="#" class="autoLink" style="display: none;">Use current location: <span>not found</span></a>
+  </label>
+      
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript"></script>
+      
+      
+  </body>
+</html>
